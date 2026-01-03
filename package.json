@@ -1,0 +1,13 @@
+{
+  "name": "new-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
