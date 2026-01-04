@@ -31,7 +31,7 @@
                 <p class="text-[13px] text-gray-400 font-bold pl-[25px]">Menu</p>
             </div>
             <nav class="pl-[20px] pt-[30px] w-[100%] h-[100%]">
-               <ul class="flex flex-col gap-2">
+                <ul class="flex flex-col gap-2">
                     <li class="px-[30px] py-[10px] rounded-md bg-white hover:bg-green-500 ">
                         <a href="./index.html" class="text-gray-500 focus:text-white text-[12px] flex items-center gap-2">
                             <span class="w-[25px] h-[25px] bg-green-500 text-grey-500 flex justify-center items-center rounded-md text-white">
@@ -96,43 +96,71 @@
         <!-- ===========>> container_information <<================-->
         <div class="container_information w-[80%] bg-white">
             
-            <div class="main_information w-[100%] h-[100%] px-[15px] py-[40px] flex gap-3">
+            <div class="main_information w-[100%] h-[100%] px-[15px] py-[40px] flex flex-col gap-3">
                 
                 <div class="main_Dashborad w-[100%] ">
-                    <div class="title w-[100%] py-5">
-                        <h1 class="font-bold text-[14px]">Dashboard</h1>
-                        <span class="text-[12px] text-gray-300">Thu Dec 01 2025</span>
-                    </div>
-                    <div class="dashboard w-[100%] flex gap-3">
-                        
-                        <div class="main-money w-[62%] flex gap-4 ">
-                            <div class="money-today w-[230px] h-[90px] p-[20px] bg-green-500 rounded-md shadow-md flex flex-col gap-4">
-                                <header class="text-[13px] text-gray-200 font-bold ">Today</header>
-                                <p class="font-bold text-white">$0 <span class="text-[10px] font-normal">+$200</span></p>
-                            </div>
-                            <div class="money-today w-[230px] h-[90px] bg-white rounded-md shadow-md border-[1px] p-[20px] flex flex-col gap-4">
-                                <header class="text-[13px] text-gray-400 font-bold ">This Week</header>
-                                <p class="font-bold text-black ">$10,000 <span class="text-[10px] font-normal text-gray-400">+$200</span></p>
-                            </div>
-                            <div class="money-today w-[230px] h-[90px] bg-white rounded-md shadow-md border-[1px] p-[20px] flex flex-col gap-4">
-                                <header class="text-[13px] text-gray-400 font-bold ">This Month</header>
-                                <p class="font-bold text-black ">$20,000 <span class="text-[10px] font-normal text-gray-400">+$200</span></p>
-                            </div>
-                            
+                    <div class="title w-[100%] flex justify-between py-5">
+                        <div class="">
+
+                            <h1 class="font-bold text-[14px]">List Category</h1>
+                            <span class="text-[12px] text-gray-300">Thu Dec 01 2025</span>
                         </div>
 
-
-                        <div class="w-[37%] h-[100px] ">
-                            <div class="many-today py-2 px-[10px] rounded-md border-[1px] shadow-md">
-                                <p class="text-[13px] text-gray-400">Today Order</p>
-                            </div>
-                        </div>
-                        
+                        <!-- add product -->
+                         <div class="">
+                            <a href="" class="py-2 px-3 bg-green-500 hover:bg-green-600 text-[12px] text-white rounded-md ">Add Food +</a>
+                         </div>
                     </div>
-                    
-                    
+                      
                 </div>
-                
+
+                <!-- list table -->
+                <div class=" w-[100%] rounded-md">
+                    <table class="border-[1px] w-[100%] rounded-md">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>IMAGE</th>
+                                <th class="w-[40%]">NAME</th>
+                                <th>PRICE</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>img</td>
+                                <td>Asus</td>
+                                <td>120$</td>
+                                <td>
+                                    <button class="py-1 px-4 bg-green-500 text-white rounded-md pl-2 text-[14px]">Edit</button>
+                                    <button class="py-1 px-4 bg-orange-500 text-white rounded-md text-[14px]">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>img</td>
+                                <td>Asus</td>
+                                <td>120$</td>
+                                <td>
+                                    <button class="py-1 px-4 bg-green-500 text-white rounded-md pl-2 text-[14px]">Edit</button>
+                                    <button class="py-1 px-4 bg-orange-500 text-white rounded-md text-[14px]">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>img</td>
+                                <td>Asus</td>
+                                <td>120$</td>
+                                <td>
+                                    <button class="py-1 px-4 bg-green-500 text-white rounded-md pl-2 text-[14px]">Edit</button>
+                                    <button class="py-1 px-4 bg-orange-500 text-white rounded-md text-[14px]">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         
