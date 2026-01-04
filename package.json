@@ -2,12 +2,28 @@
   "name": "new-tailwindcss",
   "version": "1.0.0",
   "description": "",
-  "main": "tailwind.config.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/main.css --watch"
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phanphak/POS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/phanphak/POS/issues"
+  },
+  "homepage": "https://github.com/phanphak/POS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0",
+    "nodemon": "^3.1.11",
+    "promise": "^8.3.0"
+  }
 }
