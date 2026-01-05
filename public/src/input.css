@@ -22,3 +22,7 @@ table td{
     color: rgb(106, 104, 104);
     font-size: 14px;
 }
+
+table tbody tr:hover{
+    background-color: rgba(226, 224, 224, 0.373);
+}
