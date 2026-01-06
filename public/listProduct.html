@@ -109,7 +109,7 @@
                     </div>
                     <div class="list-product w-[100%] flex gap-3">
                         
-                        <div id="categoryList" class="main-list w-[62%] grid grid-cols-4 gap-4 justify-center">
+                        <div id="categoryList" class="main-list w-[64%] h-[600px] grid grid-cols-4 overflow-y-scroll gap-4 justify-center p-[10px]">
                             <!-- <div class="money-today w-[170px] h-[200px] p-[10px] bg-white rounded-md shadow-md flex flex-col gap-4 hover:w-[173px] hover:h-[203px] border-[1px]"">
                                 <img class="w-[100%] h-[60%]" src="">
                                  
@@ -121,7 +121,7 @@
                         </div>
 
 
-                        <div class="w-[37%] h-[100px] ">
+                        <div class="w-[35%] h-[100px] ">
                             <div class="many-today py-2 px-[10px] rounded-md border-[1px] shadow-md">
                                 <p class="text-[13px] text-gray-400">List Order</p>
                             </div>
@@ -168,7 +168,12 @@ fetch("http://localhost:3000/api/getAll")
           <div class="money-today w-[170px] h-[200px] p-[10px] bg-white rounded-md shadow-md flex flex-col gap-4 hover:w-[173px] hover:h-[203px] hover:border-[1px]"">
             <img class="w-[100%] h-[60%]" src="">
             <header class="text-[13px] text-gray-600 font-bold ">${cat.name}</header>
-            <p class="font-bold text-gray-500">$${cat.price}</p>
+            
+            <div class="flex w-[100%] justify-between">
+                <p class="font-bold text-gray-500">$${cat.price}</p>
+                <p class="font-bold text-gray-500">stork: ${cat.stork}</p>
+            </div>
+
            </div>
         `)
         .join("");

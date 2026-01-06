@@ -9,9 +9,9 @@ exports.getAll = async () =>{
 
 
 // create cetegory or Post
-exports.create = async (image, name, price) =>{
-    const sql = ("INSERT INTO pos_ecommerce_tb (image,name, price) VALUES(?,?,?)");
-    const [result] = await db.query(sql, [image, name, price]);
+exports.create = async (image, name, price,stork) =>{
+    const sql = ("INSERT INTO pos_ecommerce_tb (image,name, price, stork) VALUES(?,?,?,?)");
+    const [result] = await db.query(sql, [image, name, price, stork]);
     return result;
 }
 

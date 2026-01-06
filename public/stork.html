@@ -9,7 +9,7 @@
 <body>
    
 
-        <div class="w-[100%] h-[50px]  bg-green-600 text-gray-300 flex justify-around items-center sticky sticky-t-0">
+        <div class="w-[100%] h-[50px]  bg-green-600 text-gray-300 flex justify-around items-center sticky top-0">
             <div class="logo flex justify-around ">
                 <p>SHOP STOR</p>
         </div>
@@ -26,7 +26,8 @@
     <div class="container_section flex w-[100%] h-[700px] gap-3 ">
         
         <!-- =============>> container_menu <<============= -->
-        <div class="container_menu w-[20%] pl-[15px] pt-[20px] shadow-xl bg-white">
+         
+        <div class="container_menu w-[400px] pl-[15px] pt-[20px] shadow-xl bg-white ">
             <div class="title_manu">
                 <p class="text-[13px] text-gray-400 font-bold pl-[25px]">Menu</p>
             </div>
@@ -100,7 +101,7 @@
                 
                 <div class="main_Dashborad w-[100%] ">
                     <div class="title w-[100%] flex justify-between py-5">
-                        <div class="">
+                        <div class="sticky start-0">
 
                             <h1 class="font-bold text-[14px]">List Category</h1>
                             <span class="text-[12px] text-gray-300">Thu Dec 01 2025</span>
@@ -116,18 +117,19 @@
 
                 <!-- list table -->
                 <div class=" w-[100%] rounded-md">
-                    <table class="border-[1px] w-[100%] rounded-md">
+                    <table class="border-[1px] w-[100%] rounded-md ">
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>IMAGE</th>
                                 <th class="w-[40%]">NAME</th>
                                 <th>PRICE</th>
+                                <th>STORK</th>
                                 <th>ACTION</th>
                             </tr>
                         </thead>
 
-                        <tbody id="categoryStork">
+                        <tbody id="categoryStork" class="w-[100%] ">
                             <!-- <tr>
                                 <td>01</td>
                                 <td>img</td>
@@ -178,10 +180,11 @@
                     src="${cat.imag}"
                 </td>
                 <td>${cat.name}</td>
-                <td>$${cat.price}$</td>
+                <td>$${cat.price}</td>
+                <td>${cat.stork}</td>
                 <td>
                     <button class="py-1 px-4 bg-green-500 text-white rounded-md pl-2 text-[14px]">Edit</button>
-                    <button class="py-1 px-4 bg-orange-500 text-white rounded-md text-[14px]">delete</button>
+                    <button id="btnDeleteStork" class="py-1 px-4 bg-orange-500 text-white rounded-md text-[14px]">delete</button>
                 </td>
            </tr>
         `)
@@ -191,5 +194,12 @@
   .catch(err => {
     console.error(err);
   });
+
+
+
+
+
+// delete stork
+
 
 </script>

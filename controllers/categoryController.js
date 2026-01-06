@@ -37,9 +37,9 @@ exports.getAllProduct = async (req, res) =>{
 exports.createCategory = async (req, res) =>{
     try {
         
-        const {image, name, price} = req.body;
+        const {image, name, price , stork} = req.body;
         
-        const createCategory_param = await categoryModel.create(image,name , price);
+        const createCategory_param = await categoryModel.create(image,name , price, stork);
         if(!image || !name|| !price){
             res.status(404).json({
                 success: false,
@@ -47,7 +47,7 @@ exports.createCategory = async (req, res) =>{
             })
         }
         // respone back of server
-        res.status(200).json({
+        res.status(201).json({
             success: true,
             message: "Create category successfully!",
             data:{
@@ -75,12 +75,7 @@ exports.updateCategory = async (req, res) =>{
         const {id} = req.params;
         const {image, name, price} = req.body;
         const updateCategory_param = await categoryModel.update(id, image, name, price);
-        if(!updateCategory_param){
-            res.status(404).json({
-                success: false,
-                message: "ID update Not found!"
-            })
-        }
+        
         //respone back
         res.status(200).json({
             success: true,
@@ -103,12 +98,7 @@ exports.deleteCategory = async (req, res) =>{
         const {id} = req.params;
         // req server
         const deleteCategory_param = await categoryModel.delete(id);
-        if(!deleteCategory_param){
-            res.status(404).json({
-                success: false,
-                message: "ID Not found!"
-            })
-        }
+        
 
         // respone server back
         res.status(200).json({
